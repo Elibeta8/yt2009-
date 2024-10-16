@@ -1,0 +1,28 @@
+[debug] [2024-10-15T23:44:10.479Z] ----------------------------------------------------------------------
+[debug] [2024-10-15T23:44:10.486Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2024-10-15T23:44:10.487Z] CLI Version:   13.22.0
+[debug] [2024-10-15T23:44:10.487Z] Platform:      win32
+[debug] [2024-10-15T23:44:10.488Z] Node Version:  v21.6.2
+[debug] [2024-10-15T23:44:10.489Z] Time:          Tue Oct 15 2024 19:44:10 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-10-15T23:44:10.489Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-15T23:44:10.682Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-15T23:44:10.684Z] > authorizing via signed-in user (ebeta2024@gmail.com)
+[debug] [2024-10-15T23:44:10.689Z] Checked if tokens are valid: true, expires at: 1729039143827
+[debug] [2024-10-15T23:44:10.689Z] Checked if tokens are valid: true, expires at: 1729039143827
+[debug] [2024-10-15T23:44:10.697Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2024-10-15T23:44:11.412Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-10-15T23:44:11.413Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-10-15T23:44:15.817Z] TypeError: Cannot read properties of undefined (reading 'value')
+    at ListPrompt.getCurrentValue (C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\inquirer\lib\prompts\list.js:145:53)
+    at C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\map.js:10:37
+    at OperatorSubscriber._this._next (C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at Subscriber.next (C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\take.js:15:32
+    at OperatorSubscriber._this._next (C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at Subscriber.next (C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at Interface.handler (C:\Users\Betaf\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\observable\fromEvent.js:59:31)
+    at Interface.emit (node:events:531:35)
+    at Interface.emit (node:domain:488:12)
+[error] 
+[error] Error: An unexpected error has occurred.
